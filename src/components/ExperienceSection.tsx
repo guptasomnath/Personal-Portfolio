@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Briefcase, Calendar, MapPin, ChevronDown, ChevronUp, Building2, Layers, Trophy } from "lucide-react";
+import {
+  Briefcase,
+  Calendar,
+  MapPin,
+  ChevronDown,
+  ChevronUp,
+  Building2,
+  Layers,
+  Trophy,
+} from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
@@ -10,6 +19,7 @@ interface Experience {
   company: string;
   position: string;
   location: string;
+  website?: string;
   duration: string;
   startDate: string;
   endDate: string;
@@ -24,6 +34,8 @@ const experiences: Experience[] = [
   {
     company: "Omm Digital Soluction Pvt.Ltd",
     position: "Full Stack Developer",
+    website:
+      "https://www.google.com/search?q=omm+digital+solutions&oq=omm+di&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyDAgCEAAYQxiABBiKBTIGCAMQRRg5MgcIBBAAGIAEMgsIBRAAGAoYCxiABDIGCAYQRRg8MgYIBxBFGDzSAQgxNTM3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
     location: "Dum Dum, Kolkata, India",
     duration: "1.9 years",
     startDate: "March 2024",
@@ -36,11 +48,24 @@ const experiences: Experience[] = [
       "Architected and developed large-scale web platform serving students and administrative staff with secure course browsing, purchase, and payment processing via Razorpay",
       "Developed flexible trekking tour booking platform with comprehensive admin panel and PhonePe payment integration",
     ],
-    technologies: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "Docker"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+    ],
   },
 ];
 
-function ExperienceCard({ experience, index }: { experience: Experience; index: number }) {
+function ExperienceCard({
+  experience,
+  index,
+}: {
+  experience: Experience;
+  index: number;
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -68,9 +93,15 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
                 <h3 className="text-gray-900 dark:text-white mb-1">
                   {experience.position}
                 </h3>
-                <h4 className="text-blue-600 dark:text-blue-400">
-                  {experience.company}
-                </h4>
+                {experience.website ? (
+                  <a href={experience.website} target="__blank" className="text-blue-600 dark:text-blue-400 cursor-pointer underline">
+                    {experience.company}
+                  </a>
+                ) : (
+                  <h4 className="text-blue-600 dark:text-blue-400">
+                    {experience.company}
+                  </h4>
+                )}
               </div>
               {experience.isCurrentJob && (
                 <Badge className="bg-green-500 hover:bg-green-600 shrink-0">
@@ -82,8 +113,12 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
             <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mt-3">
               <div className="flex items-center gap-1.5">
                 <Calendar className="h-4 w-4" />
-                <span>{experience.startDate} - {experience.endDate}</span>
-                <span className="text-gray-400 dark:text-gray-500">({experience.duration})</span>
+                <span>
+                  {experience.startDate} - {experience.endDate}
+                </span>
+                <span className="text-gray-400 dark:text-gray-500">
+                  ({experience.duration})
+                </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <MapPin className="h-4 w-4" />
@@ -169,10 +204,7 @@ function ExperienceCard({ experience, index }: { experience: Experience; index: 
 
 export function ExperienceSection() {
   return (
-    <section
-      id="experience"
-      className="py-20 bg-gray-50 dark:bg-gray-800"
-    >
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -181,7 +213,9 @@ export function ExperienceSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-gray-900 dark:text-white mb-4">Work Experience</h2>
+          <h2 className="text-gray-900 dark:text-white mb-4">
+            Work Experience
+          </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             My professional journey in full-stack development
           </p>
@@ -190,11 +224,7 @@ export function ExperienceSection() {
         {/* Experience Cards */}
         <div className="space-y-6 mb-16">
           {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={index}
-              experience={experience}
-              index={index}
-            />
+            <ExperienceCard key={index} experience={experience} index={index} />
           ))}
         </div>
 
@@ -212,12 +242,12 @@ export function ExperienceSection() {
             <p className="text-blue-100">Years of Experience</p>
           </div>
           <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow">
-            <Layers className="h-8 w-8 mx-auto mb-3 opacity-90"/>
+            <Layers className="h-8 w-8 mx-auto mb-3 opacity-90" />
             <div className="mb-2">9+</div>
             <p className="text-purple-100">Projects Completed</p>
           </div>
           <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow">
-            <Trophy className="h-8 w-8 mx-auto mb-3 opacity-90"/>
+            <Trophy className="h-8 w-8 mx-auto mb-3 opacity-90" />
             <div className="mb-2">3×</div>
             <p className="text-green-100">Employee of the Month</p>
           </div>

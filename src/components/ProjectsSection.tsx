@@ -119,7 +119,14 @@ const companyProjects: Project[] = [
     title: "Tour Tracking Website With Crm",
     description:
       "Developed flexible trekking tour booking platform with comprehensive admin panel and PhonePe payment integration",
-    techStack: ["Next.js", "Node js", "Nginx", "PostgresSql", "Docker", "CI/CD"],
+    techStack: [
+      "Next.js",
+      "Node js",
+      "Nginx",
+      "PostgresSql",
+      "Docker",
+      "CI/CD",
+    ],
     isCompanyProject: true,
     demoUrl: "https://trekinsikkim.in/",
     companyLogo: "company-logo",
@@ -159,6 +166,74 @@ const companyProjects: Project[] = [
       "/company-projects/greens/image1.png",
       "/company-projects/greens/image2.png",
       "/company-projects/greens/image3.png",
+    ],
+  },
+  {
+    title: "Grillex — Metal Partitions & Invisible Grills Platform",
+    description:
+      "Developed a modern, SEO-friendly website for Grillex using Next.js (SSR), TypeScript, and Tailwind CSS, integrated with a WordPress CMS and custom REST API to power dynamic content and product sections.",
+    techStack: ["Next Js", "Tailwind Css", "Typescript", "Wordpress CMS"],
+    isCompanyProject: true,
+    demoUrl: "https://www.grillex.in/",
+    companyLogo: "company-logo",
+    thumbnail: "/company-projects/grillex/image2.png",
+    fullDescription:
+      "Built a fast, SEO-friendly website for Grillex using Next.js (SSR), TypeScript, and Tailwind CSS. Integrated a custom WordPress CMS and REST API to manage dynamic content such as products, galleries, and service sections. The site focuses on clean UI, responsive design, and smooth performance to showcase Grillex’s metal partitions, furniture, and invisible grill solutions.",
+    features: [
+      "Built with Next.js using SSR for fast, SEO-friendly rendering",
+      "Dynamic content powered by WordPress CMS",
+      "Created a custom WordPress REST API for fetching blocks and content.",
+      "Fully mobile-optimized and performance-tuned layout"
+    ],
+    screenshots: [
+      "/company-projects/grillex/image1.png",
+      "/company-projects/grillex/image2.png",
+    ],
+  },
+  {
+    title: "Premium Bathware — Luxury Bath & Kitchen Product Platform",
+    description:
+      "Developed a premium product website for Premium Bathware using Next.js, TypeScript, Tailwind CSS, and a custom Node.js + Express.js API with MySQL for dynamic product listings.",
+    techStack: ["Next Js", "Tailwind Css", "Typescript", "Node Js", "MySql"],
+    isCompanyProject: true,
+    demoUrl: "https://www.premiumbathware.com/",
+    companyLogo: "company-logo",
+    thumbnail: "/company-projects/premium-bathware/image1.png",
+    fullDescription:
+      "Created the flagship website for Premium Bathware using Next.js (SSR), TypeScript, and Tailwind CSS, designed with a luxury look to match their high-end bathware and kitchen products. Integrated a custom Node.js + Express.js backend with a MySQL database to manage dynamic product listings, categories, and details. The site is optimized for performance, SEO, and smooth browsing to showcase faucets, sinks, accessories, and modern fixtures.",
+    features: [
+      "Built with Next.js (SSR) for fast, SEO-optimized performance",
+      "Node.js + Express.js server for backend operations",
+      "MySQL database powering dynamic product listings",
+      "Mobile-first responsive layout"
+    ],
+    screenshots: [
+      "/company-projects/premium-bathware/image1.png",
+      "/company-projects/premium-bathware/image2.png",
+       "/company-projects/premium-bathware/image3.png",
+        "/company-projects/premium-bathware/image4.png",
+    ],
+  },
+  {
+    title: "Promiplast Windows — UPVC Window Systems Platform",
+    description:
+      "Developed a modern, SEO-friendly website for Promiplast Windows using Next.js, TypeScript, Tailwind CSS, and a WordPress CMS with custom APIs for dynamic content and brochure downloads.",
+    techStack: ["Next Js", "Tailwind Css", "Typescript", "Wordpress CMS"],
+    isCompanyProject: true,
+    demoUrl: "https://www.promiplastwindows.com/",
+    companyLogo: "company-logo",
+    thumbnail: "/company-projects/promiplast/image1.png",
+    fullDescription:
+      "Built a high-performance website for Promiplast UPVC Window Systems, powered by Next.js (SSR), TypeScript, and Tailwind CSS for a clean, responsive UI. Integrated WordPress CMS with custom REST APIs to manage product details and content. Added a modern brochure-download feature that unlocks files after form submission. The site is optimized for speed, SEO, and smooth user experience.",
+    features: [
+      "Built with Next.js (SSR) for SEO and fast performance",
+      "WordPress CMS with custom REST API for dynamic content",
+      "Brochure download gated by form submission only.",
+      "Mobile-optimized modern layout"
+    ],
+    screenshots: [
+      "/company-projects/promiplast/image1.png",
+      "/company-projects/promiplast/image2.png",
     ],
   },
 ];
