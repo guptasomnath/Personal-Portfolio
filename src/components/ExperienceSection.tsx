@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
+import { getExperience } from "../utils/duration";
 
 interface Experience {
   company: string;
@@ -30,6 +31,8 @@ interface Experience {
   companyLogo?: string;
 }
 
+const exprience = getExperience("2024-04-11", null);
+
 const experiences: Experience[] = [
   {
     company: "Omm Digital Soluction Pvt.Ltd",
@@ -37,7 +40,7 @@ const experiences: Experience[] = [
     website:
       "https://www.google.com/search?q=omm+digital+solutions&oq=omm+di&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMhUIARAuGCcYrwEYxwEYgAQYigUYjgUyDAgCEAAYQxiABBiKBTIGCAMQRRg5MgcIBBAAGIAEMgsIBRAAGAoYCxiABDIGCAYQRRg8MgYIBxBFGDzSAQgxNTM3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
     location: "Dum Dum, Kolkata, India",
-    duration: "1.9 years",
+    duration: `${exprience.years}.${exprience.months} years`,
     startDate: "March 2024",
     endDate: "Present",
     isCurrentJob: true,
@@ -94,7 +97,11 @@ function ExperienceCard({
                   {experience.position}
                 </h3>
                 {experience.website ? (
-                  <a href={experience.website} target="__blank" className="text-blue-600 dark:text-blue-400 cursor-pointer underline">
+                  <a
+                    href={experience.website}
+                    target="__blank"
+                    className="text-blue-600 dark:text-blue-400 cursor-pointer underline"
+                  >
                     {experience.company}
                   </a>
                 ) : (
@@ -238,7 +245,7 @@ export function ExperienceSection() {
         >
           <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow">
             <Briefcase className="h-8 w-8 mx-auto mb-3 opacity-90" />
-            <div className="mb-2">1.9+</div>
+            <div className="mb-2">{exprience.years}.{exprience.months}+</div>
             <p className="text-blue-100">Years of Experience</p>
           </div>
           <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow">
