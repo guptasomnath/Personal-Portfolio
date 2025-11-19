@@ -58,6 +58,13 @@ export function ProjectDialog({
     });
   };
 
+    const prevSlide = () => {
+    setCurrentSlideIndex((prev) => {
+      if (prev == 0) return (project.screenshots?.length || 0) - 1;
+      return prev - 1;
+    });
+  };
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-4xl max-h-[90vh] p-0">
@@ -90,8 +97,8 @@ export function ProjectDialog({
                 <div className="space-y-4">
                   <h3 className="text-gray-900 dark:text-white">Screenshots</h3>
                   <div className="relative w-full h-64">
-                    <div className="z-50 absolute left-4 bottom-0 top-0 flex items-center justify-center pb-3">
-                      <button className="bg-background opacity-70 cursor-pointer p-2 rounded-full">
+                    <div className="z-50 absolute left-4 bottom-0 top-0 flex items-center justify-center pb-3 h-full">
+                      <button onClick={prevSlide} className="bg-background opacity-70 cursor-pointer p-2 rounded-full">
                         <ArrowBigLeftDash size={28} />
                       </button>
                     </div>
@@ -112,7 +119,7 @@ export function ProjectDialog({
                       </motion.div>
                     ))}
 
-                    <div className="z-50 absolute right-4 bg-black bottom-0 top-0 flex items-center justify-center pb-3">
+                    <div className="z-50 absolute right-4 bg-black bottom-0 top-0 flex items-center justify-center pb-3 h-full">
                       <button
                         onClick={nextSlide}
                         className="bg-background opacity-70 cursor-pointer p-2 rounded-full"
