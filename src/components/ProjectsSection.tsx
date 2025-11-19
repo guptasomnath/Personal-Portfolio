@@ -22,7 +22,7 @@ const personalProjects: Project[] = [
     ],
     githubUrl: "https://github.com/guptasomnath/App-Helper",
     demoUrl: "https://somnath-gupta.vercel.app/",
-    thumbnail: "/personal-projects/app-helper-project/image1.png",
+    thumbnail: "/personal-projects/app-helper-project/image1.webp",
     fullDescription:
       "This is a full-stack web application. For frontend i used React Js for Backend i used Express js and for Database i used Google Spreadsheet. It incorporates advanced features such as user authentication, project filtring, project searching, project public or unlist option and more.",
     features: [
@@ -32,10 +32,10 @@ const personalProjects: Project[] = [
       "Project download count",
     ],
     screenshots: [
-      "/personal-projects/app-helper-project/image1.png",
-      "/personal-projects/app-helper-project/image2.png",
-      "/personal-projects/app-helper-project/image3.png",
-      "/personal-projects/app-helper-project/image4.png",
+      "/personal-projects/app-helper-project/image1.webp",
+      "/personal-projects/app-helper-project/image2.webp",
+      "/personal-projects/app-helper-project/image3.webp",
+      "/personal-projects/app-helper-project/image4.webp",
     ],
   },
   {
@@ -44,7 +44,7 @@ const personalProjects: Project[] = [
       "A project management tool with kanban boards, task assignments, time tracking, and team collaboration features.",
     techStack: ["Next.js", "Express js", "MongoDB"],
     githubUrl: "https://github.com/guptasomnath/EdTech-Full-Stack-MERN",
-    thumbnail: "/personal-projects/ed-tech/image1.png",
+    thumbnail: "/personal-projects/ed-tech/image1.webp",
     fullDescription:
       "A comprehensive task management solution designed for agile teams. Features kanban boards, sprint planning, time tracking, and detailed analytics to help teams stay organized and productive.",
     features: [
@@ -55,8 +55,8 @@ const personalProjects: Project[] = [
       "Fully Device Responsive",
     ],
     screenshots: [
-      "/personal-projects/ed-tech/image1.png",
-      "/personal-projects/ed-tech/image2.png",
+      "/personal-projects/ed-tech/image1.webp",
+      "/personal-projects/ed-tech/image2.webp",
     ],
   },
   {
@@ -66,7 +66,7 @@ const personalProjects: Project[] = [
     techStack: ["Node.js", "Express js", "Ejs", "Node Child Process"],
     githubUrl:
       "https://github.com/guptasomnath/CodeCompiler/blob/main/README.md",
-    thumbnail: "/personal-projects/code-editor/image1.png",
+    thumbnail: "/personal-projects/code-editor/image1.webp",
     fullDescription:
       "This is an online code compiler / editor created using Express.js and EJS. It currently supports compiling JavaScript, Java, Python, and PHP code, and can be customised to support other languages as well.",
     features: [
@@ -76,9 +76,9 @@ const personalProjects: Project[] = [
       "Support PHP code compilation",
     ],
     screenshots: [
-      "/personal-projects/code-editor/image1.png",
-      "/personal-projects/code-editor/image2.png",
-      "/personal-projects/code-editor/image3.png",
+      "/personal-projects/code-editor/image1.webp",
+      "/personal-projects/code-editor/image2.webp",
+      "/personal-projects/code-editor/image3.webp",
     ],
   },
 ];
@@ -100,7 +100,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://seiedutrust.com/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/sei/image2.png",
+    thumbnail: "/company-projects/sei/image2.webp",
     fullDescription:
       "Led the end-to-end development of an enterprise-grade CRM system—from architecture and coding to deployment and ongoing support. The platform manages customer interactions, sales processes, and business analytics, handling millions of records and delivering real-time insights to sales teams.",
     features: [
@@ -110,9 +110,9 @@ const companyProjects: Project[] = [
       "Automatic time table creation system",
     ],
     screenshots: [
-      "/company-projects/sei/image2.png",
-      "/company-projects/sei/image3.png",
-      "/company-projects/sei/image1.png",
+      "/company-projects/sei/image2.webp",
+      "/company-projects/sei/image3.webp",
+      "/company-projects/sei/image1.webp",
     ],
   },
   {
@@ -130,7 +130,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://trekinsikkim.in/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/trek/image1.png",
+    thumbnail: "/company-projects/trek/image1.webp",
     fullDescription:
       "Developed a flexible trekking tour booking platform featuring a comprehensive admin panel, real-time booking management, and seamless PhonePe payment integration.",
     features: [
@@ -139,10 +139,10 @@ const companyProjects: Project[] = [
       "Implemented dynamic package creation with multi-category linking and advanced page/blog management from admin dashboard",
     ],
     screenshots: [
-      "/company-projects/trek/image1.png",
-      "/company-projects/trek/image2.png",
-      "/company-projects/trek/image3.png",
-      "/company-projects/trek/image4.png",
+      "/company-projects/trek/image1.webp",
+      "/company-projects/trek/image2.webp",
+      "/company-projects/trek/image3.webp",
+      "/company-projects/trek/image4.webp",
     ],
   },
   {
@@ -153,7 +153,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://greenspaceinterior.in/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/greens/image1.png",
+    thumbnail: "/company-projects/greens/image1.webp",
     fullDescription:
       "Developed a responsive, SEO-friendly interior design website with a customizable enquiry form and a real-time kitchen design customizer that lets users instantly preview their design choices.",
     features: [
@@ -163,9 +163,9 @@ const companyProjects: Project[] = [
       "Email notification system when any new query happen",
     ],
     screenshots: [
-      "/company-projects/greens/image1.png",
-      "/company-projects/greens/image2.png",
-      "/company-projects/greens/image3.png",
+      "/company-projects/greens/image1.webp",
+      "/company-projects/greens/image2.webp",
+      "/company-projects/greens/image3.webp",
     ],
   },
   {
@@ -176,7 +176,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://www.grillex.in/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/grillex/image2.png",
+    thumbnail: "/company-projects/grillex/image2.webp",
     fullDescription:
       "Built a fast, SEO-friendly website for Grillex using Next.js (SSR), TypeScript, and Tailwind CSS. Integrated a custom WordPress CMS and REST API to manage dynamic content such as products, galleries, and service sections. The site focuses on clean UI, responsive design, and smooth performance to showcase Grillex’s metal partitions, furniture, and invisible grill solutions.",
     features: [
@@ -186,8 +186,8 @@ const companyProjects: Project[] = [
       "Fully mobile-optimized and performance-tuned layout"
     ],
     screenshots: [
-      "/company-projects/grillex/image1.png",
-      "/company-projects/grillex/image2.png",
+      "/company-projects/grillex/image1.webp",
+      "/company-projects/grillex/image2.webp",
     ],
   },
   {
@@ -198,7 +198,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://www.premiumbathware.com/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/premium-bathware/image1.png",
+    thumbnail: "/company-projects/premium-bathware/image1.webp",
     fullDescription:
       "Created the flagship website for Premium Bathware using Next.js (SSR), TypeScript, and Tailwind CSS, designed with a luxury look to match their high-end bathware and kitchen products. Integrated a custom Node.js + Express.js backend with a MySQL database to manage dynamic product listings, categories, and details. The site is optimized for performance, SEO, and smooth browsing to showcase faucets, sinks, accessories, and modern fixtures.",
     features: [
@@ -208,10 +208,10 @@ const companyProjects: Project[] = [
       "Mobile-first responsive layout"
     ],
     screenshots: [
-      "/company-projects/premium-bathware/image1.png",
-      "/company-projects/premium-bathware/image2.png",
-       "/company-projects/premium-bathware/image3.png",
-        "/company-projects/premium-bathware/image4.png",
+      "/company-projects/premium-bathware/image1.webp",
+      "/company-projects/premium-bathware/image2.webp",
+       "/company-projects/premium-bathware/image3.webp",
+        "/company-projects/premium-bathware/image4.webp",
     ],
   },
   {
@@ -222,7 +222,7 @@ const companyProjects: Project[] = [
     isCompanyProject: true,
     demoUrl: "https://www.promiplastwindows.com/",
     companyLogo: "company-logo",
-    thumbnail: "/company-projects/promiplast/image1.png",
+    thumbnail: "/company-projects/promiplast/image1.webp",
     fullDescription:
       "Built a high-performance website for Promiplast UPVC Window Systems, powered by Next.js (SSR), TypeScript, and Tailwind CSS for a clean, responsive UI. Integrated WordPress CMS with custom REST APIs to manage product details and content. Added a modern brochure-download feature that unlocks files after form submission. The site is optimized for speed, SEO, and smooth user experience.",
     features: [
@@ -232,8 +232,8 @@ const companyProjects: Project[] = [
       "Mobile-optimized modern layout"
     ],
     screenshots: [
-      "/company-projects/promiplast/image1.png",
-      "/company-projects/promiplast/image2.png",
+      "/company-projects/promiplast/image1.webp",
+      "/company-projects/promiplast/image2.webp",
     ],
   },
 ];
